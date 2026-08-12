@@ -14,9 +14,9 @@ const Footer = () => {
           <div>
             <Link
               href="/"
-              className="text-2xl font-bold tracking-tight text-white"
+              className="text-2xl font-bold tracking-tight text-white uppercase"
             >
-              YourName<span className="text-yellow-400">.</span>
+              sagar dey<span className="text-yellow-400">.</span>
             </Link>
 
             <p className="mt-2 max-w-sm text-sm text-white/50">
@@ -65,7 +65,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-white/40">
-            © 2026 YourName. All rights reserved.
+            © 2026 Sagar Dey. All rights reserved.
           </p>
 
           {/* Social links */}

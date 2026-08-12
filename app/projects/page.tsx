@@ -1,21 +1,13 @@
-import {
-  ArrowUpRight,
-  ExternalLink,
-} from "lucide-react";
+import Image from "next/image";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 const projects = [
   {
     title: "Eshop Adviser",
+    image: "/images/projects/eshop-ranker.jpg",
     description:
       "A machine learning powered system that analyzes product reviews and predicts the best online store based on customer feedback.",
-    tags: [
-      "Python",
-      "Django",
-      "React",
-      "Machine Learning",
-      "NLP",
-      "MySQL",
-    ],
+    tags: ["Python", "Django", "React", "Machine Learning", "NLP", "MySQL"],
     github: "#",
     demo: "#",
     featured: true,
@@ -24,12 +16,7 @@ const projects = [
     title: "AI Agent",
     description:
       "An intelligent tool-using AI agent built with Python and Gemini, capable of interacting with external tools and handling real-world tasks.",
-    tags: [
-      "Python",
-      "Gemini",
-      "AI Agents",
-      "Tool Calling",
-    ],
+    tags: ["Python", "Gemini", "AI Agents", "Tool Calling"],
     github: "#",
     demo: "#",
     featured: false,
@@ -38,12 +25,7 @@ const projects = [
     title: "RAG Application",
     description:
       "An AI application that uses retrieval-augmented generation to provide answers based on external knowledge and documents.",
-    tags: [
-      "Python",
-      "LangChain",
-      "RAG",
-      "LLM",
-    ],
+    tags: ["Python", "LangChain", "RAG", "LLM"],
     github: "#",
     demo: "#",
     featured: false,
@@ -54,7 +36,6 @@ const Projects = () => {
   return (
     <main className="min-h-screen bg-black text-white">
       <div className="mx-auto max-w-6xl px-6 py-24 md:px-10 lg:py-32">
-
         {/* Header */}
         <section>
           <p className="mb-3 text-sm font-medium uppercase tracking-widest text-yellow-400">
@@ -67,9 +48,8 @@ const Projects = () => {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/50">
-            A collection of projects I've worked on while exploring
-            software development, artificial intelligence, and machine
-            learning.
+            A collection of projects I've worked on while exploring software
+            development, artificial intelligence, and machine learning.
           </p>
         </section>
 
@@ -88,7 +68,6 @@ const Projects = () => {
               "
             >
               <div className="grid lg:grid-cols-[0.8fr_1.2fr]">
-
                 {/* Project Visual */}
                 <div
                   className="
@@ -96,7 +75,7 @@ const Projects = () => {
                     items-center justify-center
                     overflow-hidden
                     border-b border-white/10
-                    bg-white/[0.02]
+                    bg-white/2
                     lg:border-b-0
                     lg:border-r
                   "
@@ -115,24 +94,26 @@ const Projects = () => {
                   {/* Project Placeholder */}
                   <div
                     className="
-                      flex h-44 w-64
+                      flex h-52 w-80
                       items-center justify-center
                       rounded-2xl
-                      border border-yellow-400/20
                       bg-yellow-400/5
                       text-center
-                      text-sm text-yellow-400/70
+                      text-sm
                       transition-transform duration-500
                       group-hover:scale-105
                     "
                   >
-                    Project Preview
+                    <img
+                      src={project.image}
+                      alt={`${project.title} project preview`}
+                      className="h-full w-full object-cover rounded-2xl"
+                    />
                   </div>
                 </div>
 
                 {/* Project Content */}
                 <div className="flex flex-col justify-between p-8 md:p-10">
-
                   <div>
                     <div className="flex items-start justify-between gap-4">
                       <div>
@@ -216,7 +197,6 @@ const Projects = () => {
                       Live Demo
                     </a>
                   </div>
-
                 </div>
               </div>
             </article>
@@ -225,15 +205,11 @@ const Projects = () => {
 
         {/* Bottom */}
         <section className="mt-20 border-t border-white/10 pt-10">
-          <p className="text-sm text-white/30">
-            More projects coming soon.
-          </p>
+          <p className="text-sm text-white/30">More projects coming soon.</p>
         </section>
-
       </div>
     </main>
   );
 };
 
 export default Projects;
-

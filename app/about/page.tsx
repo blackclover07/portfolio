@@ -54,11 +54,13 @@ const About = () => {
         <section className="grid gap-12 lg:grid-cols-2">
           {/* Photo / Visual */}
           <div className="flex min-h-112.5 items-center justify-center rounded-3xl border border-white/10 bg-white/2">
-            <div className="flex h-72 w-72 items-center justify-center rounded-2xl border border-yellow-400/20 bg-yellow-400/5 text-center text-sm text-yellow-400">
+            {/* <div className="flex h-72 w-72 items-center justify-center rounded-2xl border border-yellow-400/20 bg-yellow-400/5 text-center text-sm text-yellow-400">
               Your Photo
               <br />
               Goes Here
-            </div>
+              <img src="/images/sagar.jpeg" alt="" className="h-full w-full border-2 rounded-2xl" />
+            </div> */}
+            <img src="/images/sagar.jpeg" alt="" className="h-90 w-85 rounded-2xl "/>
           </div>
 
           {/* About Content */}
